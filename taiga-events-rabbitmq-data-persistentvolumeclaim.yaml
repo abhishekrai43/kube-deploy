@@ -7,8 +7,10 @@ metadata:
   name: taiga-events-rabbitmq-data
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteMany
+  storageClassName: ""
+  volumeName: taiga-events-vol
   resources:
     requests:
-      storage: 100Mi
+      storage: 5Gi
 status: {}

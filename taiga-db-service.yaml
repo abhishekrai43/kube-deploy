@@ -6,15 +6,14 @@ metadata:
     kompose.version: 1.26.1 (a9d05d509)
   creationTimestamp: null
   labels:
-    io.kompose.service: taiga-gateway
-  name: taiga-gateway
+    io.kompose.service: taiga-db
+  name: taiga-db
 spec:
   ports:
-    - name: "9001"
-      port: 9001
-      
+    - name: "5432"
+      port: 5432
+      targetPort: 5432
   selector:
-    io.kompose.service: taiga-gateway
-  
+    io.kompose.service: taiga-db
 status:
   loadBalancer: {}

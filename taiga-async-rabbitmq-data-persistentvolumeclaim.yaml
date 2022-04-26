@@ -7,8 +7,10 @@ metadata:
   name: taiga-async-rabbitmq-data
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteMany
+  storageClassName: ""
+  volumeName: taiga-rabbit-vol
   resources:
     requests:
-      storage: 100Mi
+      storage: 3Gi
 status: {}

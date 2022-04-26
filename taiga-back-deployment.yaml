@@ -44,24 +44,23 @@ spec:
             - name: TAIGA_SECRET_KEY
               value: taiga-back-secret-key
             - name: TAIGA_SITES_DOMAIN
-              value: localhost:9000
+              value: 34.69.163.41:9000
             - name: TAIGA_SITES_SCHEME
               value: http
             - name: TAIGA_SUBPATH
           image: taigaio/taiga-back:latest
           name: taiga-back
-          resources: {}
           volumeMounts:
             - mountPath: /taiga-back/static
-              name: taiga-static-data
+              name: taiga-static-vol
             - mountPath: /taiga-back/media
-              name: taiga-media-data
+              name: taiga-media-vol
       restartPolicy: Always
       volumes:
-        - name: taiga-static-data
+        - name: taiga-static-vol
           persistentVolumeClaim:
             claimName: taiga-static-data
-        - name: taiga-media-data
+        - name: taiga-media-vol
           persistentVolumeClaim:
             claimName: taiga-media-data
 status: {}

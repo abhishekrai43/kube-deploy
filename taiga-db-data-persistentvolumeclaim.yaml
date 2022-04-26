@@ -7,8 +7,10 @@ metadata:
   name: taiga-db-data
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteMany
+  storageClassName: ""
+  volumeName: taigadb-vol
   resources:
     requests:
-      storage: 100Mi
+      storage: 100Gi
 status: {}
