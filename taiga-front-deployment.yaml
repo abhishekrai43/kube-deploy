@@ -28,9 +28,9 @@ spec:
         - env:
             - name: TAIGA_SUBPATH
             - name: TAIGA_URL
-              value: http://localhost
+              value: 35.184.56.10:9000
             - name: TAIGA_WEBSOCKETS_URL
-              value: ws://localhost
+              value: ws://35.184.56.10
           image: taigaio/taiga-front:latest
           name: taiga-front
           ports:

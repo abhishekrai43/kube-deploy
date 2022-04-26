@@ -46,7 +46,7 @@ spec:
             - name: TAIGA_SECRET_KEY
               value: taiga-back-secret-key
             - name: TAIGA_SITES_DOMAIN
-              value: localhost:9000
+              value: 35.184.56.10:9000
             - name: TAIGA_SITES_SCHEME
               value: http
             - name: TAIGA_SUBPATH
