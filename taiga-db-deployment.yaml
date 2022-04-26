@@ -33,13 +33,16 @@ spec:
               value: taiga
             - name: POSTGRES_USER
               value: taiga
+            - name: PGDATA 
+              value: /var/lib/postgresql/data/taigadb
           image: postgres:12.3
           name: taiga-db
           ports:
-            - containerPort: 5472
+            - containerPort: 5432
           resources: {}
           volumeMounts:
-            - mountPath: /var/lib/postgresql/data
+            - mountPath: /var/lib/postgresql/data/
+              subPath: taigadb
               name: taiga-db-data
       restartPolicy: Always
       volumes:

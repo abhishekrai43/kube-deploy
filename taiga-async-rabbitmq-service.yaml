@@ -10,9 +10,9 @@ metadata:
   name: taiga-async-rabbitmq
 spec:
   ports:
-    - name: "5600"
-      port: 5600
-      targetPort: 5600
+    - name: "5672"
+      port: 5672
+      targetPort: 5672
   selector:
     io.kompose.service: taiga-async-rabbitmq
 status:

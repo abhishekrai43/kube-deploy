@@ -10,9 +10,9 @@ metadata:
   name: taiga-events-rabbitmq
 spec:
   ports:
-    - name: "7500"
-      port: 7500
-      targetPort: 7500
+    - name: "5672"
+      port: 5672
+      targetPort: 5672
   selector:
     io.kompose.service: taiga-events-rabbitmq
 status:

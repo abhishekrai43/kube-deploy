@@ -10,9 +10,9 @@ metadata:
   name: taiga-events
 spec:
   ports:
-    - name: "8000"
-      port: 8000
-      targetPort: 8000
+    - name: "8888"
+      port: 8888
+      targetPort: 8888
   selector:
     io.kompose.service: taiga-events
 status:

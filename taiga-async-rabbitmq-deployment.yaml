@@ -38,7 +38,7 @@ spec:
           image: rabbitmq:3.8-management-alpine
           name: taiga-async-rabbitmq
           ports:
-            - containerPort: 5600
+            - containerPort: 5672
           resources: {}
           volumeMounts:
             - mountPath: /var/lib/rabbitmq

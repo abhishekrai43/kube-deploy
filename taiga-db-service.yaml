@@ -10,9 +10,9 @@ metadata:
   name: taiga-db
 spec:
   ports:
-    - name: "5472"
-      port: 5472
-      targetPort: 5472
+    - name: "5432"
+      port: 5432
+      targetPort: 5432
   selector:
     io.kompose.service: taiga-db
 status:

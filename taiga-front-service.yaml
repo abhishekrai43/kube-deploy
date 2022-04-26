@@ -12,8 +12,9 @@ spec:
   ports:
     - name: "9000"
       port: 9000
-      targetPort: 9000
+      targetPort: 80
   selector:
     io.kompose.service: taiga-front
+  type: LoadBalancer
 status:
   loadBalancer: {}

@@ -31,7 +31,7 @@ spec:
             - manage.py
           env:
             - name: CELERY_ENABLED
-              value: "False"
+              value: "True"
             - name: POSTGRES_DB
               value: taiga
             - name: POSTGRES_HOST
